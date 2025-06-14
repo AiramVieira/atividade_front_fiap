@@ -1,0 +1,142 @@
+:root {
+    --main-color: #1B4E5F;
+    --gold: #D4A857;
+    --grey: #6c757d;
+    --light-grey: #e9ecef;
+    --dark-grey: #5a6268;
+    --white: #fff;
+}
+
+body {
+  background-color: var(--main-color);
+  min-height: 100vh;
+  font-family: Geneva, Verdana, sans-serif;
+  display: grid;
+  place-items: center;
+}
+
+.container {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.logo {
+    width: 80px;
+    height: 80px;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 55px;
+}
+
+.title {
+  color: var(--white);
+  font-size: 22px;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 35px;
+  line-height: 1.3;
+}
+
+.form-group {
+  margin-bottom: 20px;
+  border-radius: 8px;
+}
+
+.form-control {
+  border: 2px solid var(--light-grey);
+  border-radius: 10px;
+  padding: 15px;
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+
+.form-control:focus {
+  border-color: var(--gold);
+  box-shadow: 0 0 0 0.2rem rgba(244, 196, 48, 0.25);
+  background: var(--white);
+}
+
+.form-select {
+  border: 2px solid var(--light-grey);
+  border-radius: 10px;
+  padding: 15px;
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+
+.form-select:focus {
+  border-color: var(--gold);
+  box-shadow: 0 0 0 0.2rem rgba(244, 196, 48, 0.25);
+}
+
+.input-group-text {
+  color: var(--main-color);
+  font-weight: bold;
+  font-size: 18px;
+  padding: 0 16px;
+}
+
+.btn-container {
+  display: flex;
+  gap: 15px;
+  margin-top: 30px;
+}
+
+.btn-secondary {
+  background: var(--grey);
+  border: none;
+  border-radius: 10px;
+  padding: 15px 25px;
+  font-size: 16px;
+  font-weight: 500;
+  flex: 1;
+  transition: all 0.3s ease;
+}
+
+.btn-secondary:hover {
+  background: var(--dark-grey);
+  transform: translateY(-2px);
+}
+
+.btn-primary {
+  background: var(--gold);
+  border: none;
+  border-radius: 10px;
+  padding: 15px 25px;
+  font-size: 16px;
+  font-weight: 800;
+  color: var(--white);
+  flex: 1;
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px);
+  background: var(--gold);
+  color: var(--white);
+}
+
+.calendar-icon {
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--light-grey);
+  pointer-events: none;
+}
+
+.date-container {
+  position: relative;
+}
+
+input[type="date"] {
+  color: var(--dark-grey);
+  position: relative;
+  cursor: pointer;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+  opacity: 0;
+}
