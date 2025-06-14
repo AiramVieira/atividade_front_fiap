@@ -123,7 +123,7 @@ body {
   right: 15px;
   top: 50%;
   transform: translateY(-50%);
-  color: var(--light-grey);
+  color: var(--main-color);
   pointer-events: none;
 }
 
